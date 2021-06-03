@@ -1,0 +1,135 @@
+{
+    "hostname": "127.0.0.1",
+    "protocol": "http",
+    "port": "8000",
+    "pages": [
+        {
+            "url": "/cms",
+            "tests": [
+                {
+                    "sequence_number": "1",
+                    "locator_type": "css_selector",
+                    "operation": "is_element_visible",
+                    "locator_value": "main a.button"
+                },
+                {
+                    "sequence_number": "2",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "main a.button",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "3",
+                    "locator_type": "css_selector",
+                    "operation": "enter_text",
+                    "locator_value": "main form ul li input[name='username']",
+                    "value": "wagtail"
+                },
+                {
+                    "sequence_number": "4",
+                    "locator_type": "css_selector",
+                    "operation": "enter_text",
+                    "locator_value": "main form ul li input[name='password']",
+                    "value": "wagtail"
+                },
+                {
+                    "sequence_number": "5",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "main form ul li button[type='submit']",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "6",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav ul li:first-child"
+                },
+                {
+                    "sequence_number": "7",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav.c-explorer div.c-explorer__item a:first-child",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "8",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "main.content-wrapper table h2 a",
+                    "value": "Home"
+                },
+                {
+                    "sequence_number": "9",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav ul li:first-child",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "10",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav.c-explorer div.c-explorer__item a:nth-child(2)",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "11",
+                    "locator_type": "css_selector",
+                    "operation": "is_element_visible",
+                    "locator_value": "main section input[name='title']"
+                },
+                {
+                    "sequence_number": "12",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav ul li:first-child",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "13",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav.c-explorer div.c-explorer__item a:nth-child(3)",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "14",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav.c-explorer div.c-explorer__item:first-child",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "15",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "main form table thead h2 a",
+                    "value": "Behind the Headlines"
+                },
+                {
+                    "sequence_number": "16",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside nav #account-settings",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "17",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "aside.nav-wrapper nav.nav-main a.icon-logout",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "18",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "main li.success",
+                    "value": "You have been successfully logged out."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "hostname": "127.0.0.1",
+    "protocol": "http",
+    "port": "8000",
+    "pages": [
+        {
+            "url": "/",
+            "tests": [
+                {
+                    "sequence_number": "1",
+                    "locator_type": "css_selector",
+                    "operation": "is_element_visible",
+                    "locator_value": "header.nhsuk-header div.nhsuk-header__logo"
+                },
+                {
+                    "sequence_number": "2",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "nav.nhsuk-header__navigation a.nhsuk-header__navigation-link",
+                    "value": "Health A-Z"
+                },
+                {
+                    "sequence_number": "3",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "nav.nhsuk-header__navigation a.nhsuk-header__navigation-link",
+                    "value": "Live Well"
+                },
+                {
+                    "sequence_number": "4",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "nav.nhsuk-header__navigation a.nhsuk-header__navigation-link",
+                    "value": "Mental health"
+                },
+                {
+                    "sequence_number": "5",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "nav.nhsuk-header__navigation a.nhsuk-header__navigation-link",
+                    "value": "Care and support"
+                },
+                {
+                    "sequence_number": "6",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "nav.nhsuk-header__navigation a.nhsuk-header__navigation-link",
+                    "value": "Pregnancy"
+                },
+                {
+                    "sequence_number": "7",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "nav.nhsuk-header__navigation a.nhsuk-header__navigation-link",
+                    "value": "NHS services"
+                },
+                {
+                    "sequence_number": "8",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "main section.nhsuk-section h2",
+                    "value": "NHS App"
+                },
+                {
+                    "sequence_number": "9",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "footer p.nhsuk-footer__copyright",
+                    "value": "Crown copyright"
+                },
+                {
+                    "sequence_number": "10",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "main section.nhsuk-section a.nhsuk-action-link__link[href='/conditions/']",
+                    "wait_for_load": "True"
+                },
+                {
+                    "sequence_number": "11",
+                    "operation": "get_current_url",
+                    "value": "/conditions/"
+                },
+                {
+                    "sequence_number": "12",
+                    "locator_type": "css_selector",
+                    "operation": "is_text_element_visible",
+                    "locator_value": "main h1",
+                    "value": "Health A to Z"
+                },
+                {
+                    "sequence_number": "13",
+                    "locator_type": "css_selector",
+                    "operation": "click",
+                    "locator_value": "nav.nhsuk-breadcrumb a.nhsuk-breadcrumb__link[href='/']",
+                    "wait_for_load": "True"
+                }
+            ]
+        }
+    ]
+}
