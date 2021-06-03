@@ -16,9 +16,10 @@ LOCATOR_TYPES = {"css_selector": By.CSS_SELECTOR}
 class SmokeTest(object):
     """Smoke test the nhs.uk site"""
 
-    def __init__(self, driver, args):
+    def __init__(self, args):
         self._collect_arguments(args)
         self.spec_re = re.compile("^.*-spec.json$")
+        driver = webdriver.Chrome(f"webdrivers/{self.webdriver}")
         self.actions = TestActions(driver)
 
     def _collect_arguments(self, args):
@@ -29,8 +30,12 @@ class SmokeTest(object):
             dest="in_dir",
             help="Path and name of the test specification file",
         )
+        parser.add_argument(
+            "--webdriver", dest="webdriver", help="The webdriver to use"
+        )
         arguments = parser.parse_args()
         self.spec_dir = arguments.in_dir
+        self.webdriver = arguments.webdriver
 
     def perform_smoke_test(self):
         """Read in the test specification JSON and process each of the tests"""
@@ -75,6 +80,5 @@ class SmokeTest(object):
 
 
 if __name__ == "__main__":
-    driver = webdriver.Chrome("webdrivers/chromedriver")
-    smoke_test = SmokeTest(driver, sys.argv)
+    smoke_test = SmokeTest(sys.argv)
     smoke_test.perform_smoke_test()

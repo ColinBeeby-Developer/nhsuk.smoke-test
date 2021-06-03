@@ -24,14 +24,14 @@
                     "locator_type": "css_selector",
                     "operation": "enter_text",
                     "locator_value": "main form ul li input[name='username']",
-                    "value": "wagtail"
+                    "value": "<username>"
                 },
                 {
                     "sequence_number": "4",
                     "locator_type": "css_selector",
                     "operation": "enter_text",
                     "locator_value": "main form ul li input[name='password']",
-                    "value": "wagtail"
+                    "value": "<password>"
                 },
                 {
                     "sequence_number": "5",
