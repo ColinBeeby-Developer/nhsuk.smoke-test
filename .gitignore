@@ -1,3 +1,4 @@
 .vscode
 __pycache__/
-webdrivers/
+webdrivers/*
+!webdrivers/.gitkeep
