@@ -11,5 +11,7 @@ Before running the nhsuk.smoke-test you may need to set up the required details 
   In order to run these smoketest you will need to install a webdriver for the browser of your choice. For example you can download the chrome driver from here https://chromedriver.chromium.org/downloads . When you have downloaded the webdriver which you require, copy it to the webdrivers folder.
   
 ## Run The Smoke Test
+Before running the smoke test, enter the virtual environment:
+  pipenv shell
 To run the smoke test do 
   python smoketest.py --test-spec-folder \<path to testspec folder\> --webdriver \< webdriver \>
