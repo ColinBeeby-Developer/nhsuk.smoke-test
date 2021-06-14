@@ -12,4 +12,4 @@ Before running the nhsuk.smoke-test you may need to set up the required details 
   
 ## Run The Smoke Test
 To run the smoke test do 
-  python smoketest.py --test-spec-folder <path to testspec folder> --webdriver \< webdriver \>
+  python smoketest.py --test-spec-folder \<path to testspec folder\> --webdriver \< webdriver \>
